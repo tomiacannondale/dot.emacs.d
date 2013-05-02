@@ -18,6 +18,7 @@
       (append
        '(
 	 init-loader
+	 emacs-w3m-info-ja
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

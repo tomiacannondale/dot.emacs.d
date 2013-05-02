@@ -1,7 +1,7 @@
 ;;==================================================================
 ;; ruby-modeの設定
 ;;==================================================================
-(setq load-path (cons "~/.emacs.d/elisp/ruby-mode" load-path))
+(setq load-path (cons "~/.emacs.d/el-get/ruby-mode" load-path))
 (add-hook 'ruby-mode-hook
           '(lambda ()
            (inf-ruby-keys)))

@@ -19,6 +19,9 @@
        '(
 	 init-loader
 	 emacs-w3m-info-ja
+	 ruby-mode
+	 ruby-electric
+	 ruby-end
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -22,6 +22,7 @@
 	 ruby-mode
 	 ruby-electric
 	 ruby-end
+	 rbenv
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

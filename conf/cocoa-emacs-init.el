@@ -36,7 +36,7 @@
        '(border-color . "black")
        '(mouse-color . "white")
        '(cursor-color . "white")
-       '(width . 75)                       ;; フレームの幅
+       '(width . 140)                       ;; フレームの幅
        '(height . 40)                      ;; フレームの高さ
        '(top . 0)                          ;; Y 表示位置
        '(left . 0)                       ;; X 表示位置

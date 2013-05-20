@@ -44,11 +44,6 @@
 (setq org-agenda-files (list 
 			"~/Dropbox/org/task.org"
 			"~/Dropbox/org/project.org"
-			"~/Dropbox/org/office_scratch.org"
-			"~/Dropbox/org/office_task.org"
-			"~/Dropbox/org/office_daily.org"
-			"~/Dropbox/org/office_appointment.org"
-			"~/Dropbox/org/office_occasional.org"
 			)
       )
 
@@ -59,9 +54,6 @@
        "~/Dropbox/org/link.org"
        "~/Dropbox/org/memo.org"
        "~/Dropbox/org/shops.org"
-       "~/Dropbox/org/office_memo.org"
-       "~/Dropbox/org/office_address.org"
-       "~/Dropbox/org/office_account.org"
        )
       )
 
@@ -85,33 +77,5 @@
        ("l" "Link" entry
 	(file+headline "link.org" "Links")
 	"* [[%c][%?	:link:\n  %u")
-	("s" "scratch" entry
-	 (file+headline "office_scratch.org" "Memos")
-	 "* %?\n  " :clock-in t :prepend t :clock-resume t)
-
-	("o" "in office")
-	("ot" "Tasks in Office" entry
-	 (file+headline "office_task.org" "Office Tasks")
-	 "* TODO %?\n  " :clock-in t :clock-resume t)
-	("oc" "contract_sheet" entry
-	 (file+headline "office_task.org" "Office Tasks")
-	 "* %? :contract:\n" :clock-in t :clock-resume t)
-	("oi" "Take in" entry
-	 (file+headline "office_task.org" "Office Tasks")
-	 (file "~/Dropbox/org/capture-templates/take-in.org") :clock-in t :clock-resume t)
-	("oe" "regular employee" entry
-	 (file+headline "office_task.org" "Office Tasks")
-	 (file "~/Dropbox/org/capture-templates/regular-employee.org") :clock-in t :clock-resume t)
-	("ol" "Leave job" entry
-	 (file+headline "office_task.org" "Office Tasks")
-	 (file "~/Dropbox/org/capture-templates/leave-job.org") :clock-in t :clock-resume t)
-
-	("oo" "occasionals")
-	("ooc" "tiny Cash" entry
-	 (file+headline "office_occasional.org" "小口現金の入出金管理をする")
-	 "*** 小口現金" :clock-in t :prepend t :clock-resume t)
-	("oop" "Post" entry
-	 (file+headline "office_occasional.org" "郵便物を整理する")
-	 "*** 郵便物整理" :clock-in t :prepend t :clock-resume t)
 	)
       )

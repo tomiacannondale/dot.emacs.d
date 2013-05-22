@@ -79,3 +79,23 @@
 	"* [[%c][%?	:link:\n  %u")
 	)
       )
+
+;;========================================================
+;; mobile-org設定
+;; http://mobileorg.ncogni.to/doc/getting-started/using-dropbox/
+;; http://skalldan.wordpress.com/2011/08/18/iphone-%E3%81%A7-org-capture/
+;;========================================================
+;; Set to the location of your Org files on your local system
+;; Set to the name of the file where new notes will be stored
+(setq org-mobile-inbox-for-pull "~/Dropbox/org/iphone.org")
+;; Set to <your Dropbox root directory>/MobileOrg.
+(setq org-mobile-directory "~/Dropbox/アプリ/MobileOrg")
+
+(setq org-mobile-files
+      (list "~/Dropbox/org/memo.org"
+            "~/Dropbox/org/task.org"
+            "~/Dropbox/org/project.org"
+            "~/Dropbox/org/link.org"
+            "~/Dropbox/org/shops.org"
+            "~/Dropbox/org/iphone.org"
+            ))

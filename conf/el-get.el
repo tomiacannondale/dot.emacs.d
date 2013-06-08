@@ -31,6 +31,7 @@
 	 haml-mode
 	 slim-mode
 	 sass-mode
+	 coffee-mode
 	 auto-complete
 	 org-mode
 	 migemo

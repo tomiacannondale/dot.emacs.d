@@ -2,7 +2,7 @@
 ;;org-mode設定
 ;;http://hpcgi1.nifty.com/spen/index.cgi?OrgMode
 ;;========================================================
-(setq load-path (cons "~/.emacs.d/elisp/org-mode" load-path))
+(setq load-path (cons "~/.emacs.d/el-get/org-mode/lisp/" load-path))
 (require 'org-install)
 
 ;; グローバルなキーバインド設定

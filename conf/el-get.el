@@ -35,6 +35,7 @@
 	 markdown-mode
 	 auto-complete
 	 yasnippet
+	 color-moccur
 	 org-mode
 	 migemo
 	 wanderlust-info-ja

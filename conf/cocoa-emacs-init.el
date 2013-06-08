@@ -69,6 +69,10 @@
 ;; recenter-top-bottomのキーバインドを上書き
 (global-set-key "\C-l" 'toggle-truncate-lines)
 
+;; 円マークをバックスラッシュに
+;; https://github.com/emacs-jp/emacs-jp.github.com/issues/22
+(mac-translate-from-yen-to-backslash)
+
 ;;========================================================
 ;; emacsから辞書.appを引く(lookupの代り)
 ;; http://sakito.jp/mac/dictionary.html

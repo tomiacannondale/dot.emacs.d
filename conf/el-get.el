@@ -26,6 +26,7 @@
 	 inf-ruby
 	 rbenv
 	 rinari
+	 helm-rails
 	 rhtml-mode
 	 rspec-mode
 	 feature-mode

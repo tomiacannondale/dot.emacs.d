@@ -34,6 +34,7 @@
 	 coffee-mode
 	 markdown-mode
 	 auto-complete
+	 yasnippet
 	 org-mode
 	 migemo
 	 wanderlust-info-ja

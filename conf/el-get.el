@@ -28,6 +28,7 @@
 	 rhtml-mode
 	 rspec-mode
 	 feature-mode
+	 haml-mode
 	 auto-complete
 	 org-mode
 	 migemo

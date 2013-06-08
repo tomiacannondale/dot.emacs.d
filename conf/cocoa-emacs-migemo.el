@@ -17,3 +17,7 @@
 ;;; http://www.bookshelf.jp/soft/meadow_50.html
 ;;;========================================================
 (setq moccur-use-migemo t)
+
+;; Emacs24.3でカーソルが移動しない対処
+;; http://qiita.com/items/bda92200f4a48ca89228
+(setq search-whitespace-regexp nil)

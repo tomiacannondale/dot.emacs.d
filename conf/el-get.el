@@ -25,6 +25,7 @@
 	 inf-ruby
 	 rbenv
 	 rinari
+	 rhtml-mode
 	 auto-complete
 	 org-mode
 	 migemo

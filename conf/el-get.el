@@ -27,6 +27,7 @@
 	 rinari
 	 rhtml-mode
 	 rspec-mode
+	 feature-mode
 	 auto-complete
 	 org-mode
 	 migemo

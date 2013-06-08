@@ -41,6 +41,7 @@
 	 org-mode
 	 migemo
 	 dsvn
+	 magit
 	 wanderlust-info-ja
 	 )
        (mapcar 'el-get-source-name el-get-sources)))

@@ -40,6 +40,7 @@
 	 moccur-edit
 	 org-mode
 	 migemo
+	 dsvn
 	 wanderlust-info-ja
 	 )
        (mapcar 'el-get-source-name el-get-sources)))

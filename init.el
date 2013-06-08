@@ -113,6 +113,7 @@
   "るりまサーチを検索する"
   (interactive)
   (let ((word (read-from-minibuffer "search word: ")))
+    (setq word (replace-regexp-in-string "#" "%23" word))
     (browse-url (format "http://rurema.clear-code.com/query:%s/" word))))
 
 ;;========================================================

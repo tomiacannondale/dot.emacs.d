@@ -32,6 +32,7 @@
 	 slim-mode
 	 sass-mode
 	 coffee-mode
+	 markdown-mode
 	 auto-complete
 	 org-mode
 	 migemo

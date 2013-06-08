@@ -22,6 +22,7 @@
 	 ruby-mode
 	 ruby-electric
 	 ruby-end
+	 inf-ruby
 	 rbenv
 	 auto-complete
 	 org-mode

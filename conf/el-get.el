@@ -23,6 +23,7 @@
 	 ruby-electric
 	 ruby-end
 	 rbenv
+	 org-mode
 	 migemo
 	 wanderlust-info-ja
 	 )

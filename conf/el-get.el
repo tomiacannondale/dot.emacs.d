@@ -30,6 +30,7 @@
 	 feature-mode
 	 haml-mode
 	 slim-mode
+	 sass-mode
 	 auto-complete
 	 org-mode
 	 migemo

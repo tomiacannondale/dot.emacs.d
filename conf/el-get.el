@@ -24,6 +24,7 @@
 	 ruby-end
 	 inf-ruby
 	 rbenv
+	 rinari
 	 auto-complete
 	 org-mode
 	 migemo

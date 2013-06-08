@@ -23,6 +23,7 @@
 	 ruby-electric
 	 ruby-end
 	 rbenv
+	 migemo
 	 wanderlust-info-ja
 	 )
        (mapcar 'el-get-source-name el-get-sources)))

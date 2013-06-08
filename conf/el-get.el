@@ -36,6 +36,7 @@
 	 auto-complete
 	 yasnippet
 	 color-moccur
+	 graphviz-dot-mode
 	 org-mode
 	 migemo
 	 wanderlust-info-ja

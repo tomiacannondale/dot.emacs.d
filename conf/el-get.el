@@ -43,6 +43,7 @@
 	 migemo
 	 dsvn
 	 magit
+	 qiita-el
 	 wanderlust-info-ja
 	 )
        (mapcar 'el-get-source-name el-get-sources)))

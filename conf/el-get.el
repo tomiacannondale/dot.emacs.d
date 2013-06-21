@@ -46,6 +46,7 @@
 	 magit
 	 qiita-el
 	 wanderlust-info-ja
+	 rd-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

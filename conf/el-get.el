@@ -48,6 +48,7 @@
 	 wanderlust-info-ja
 	 rd-mode
 	 edit-server
+	 id-manager
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

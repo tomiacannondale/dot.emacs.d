@@ -9,3 +9,4 @@ tramp
 .DS_Store
 .org-id-locations
 eshell/
+conf/local

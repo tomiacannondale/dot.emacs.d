@@ -153,6 +153,8 @@
 ;; (add-to-list 'load-path "~/.emacs.d/el-get/init-loader")
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/conf/")
+(if (file-exists-p "~/.emacs.d/conf/local/")
+    (init-loader-load "~/.emacs.d/conf/local/"))
 
 ;;;========================================================
 ;;; emacsclientを起動できるようにする

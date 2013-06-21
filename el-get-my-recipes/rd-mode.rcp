@@ -1,0 +1,4 @@
+(:name rd-mode
+       :description "Edit RD file that is Ruby's POD."
+       :type http
+       :url "https://raw.github.com/uwabami/rdtool/master/utils/rd-mode.el")

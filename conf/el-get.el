@@ -47,6 +47,7 @@
 	 qiita-el
 	 wanderlust-info-ja
 	 rd-mode
+	 edit-server
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

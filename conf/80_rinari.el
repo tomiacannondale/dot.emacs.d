@@ -5,3 +5,4 @@
 ;;  git submodule update
 ;;==================================================================
 (require 'rinari)
+(global-rinari-mode)

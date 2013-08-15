@@ -106,3 +106,30 @@
 ;;========================================================
 (require 'org-latex)
 (setq org-latex-pdf-process '("platex %b" "platex %b" "dvipdfmx %b"))
+
+;;========================================================
+;; icalのイベントをorg-modeで表示する
+;; 一方的に取得するだけなので、予定はicalで入れる
+;;   http://orgmode.org/worg/org-contrib/org-mac-iCal.html
+;;
+;; ~/diary というファイルを作成して
+;;   M-x org-mac-iCal
+;; でインポート
+;;========================================================
+(add-to-list 'org-modules 'org-mac-iCal)
+(setq org-agenda-include-diary t)
+
+;; locationとかdescの項目を(できるだけ)分割して表示する
+;; あまりかっこよくない
+(add-hook 'org-agenda-cleanup-fancy-diary-hook
+          (lambda ()
+            (goto-char (point-min))
+            (save-excursion
+              (while (re-search-forward "^[a-z]" nil t)
+                (goto-char (match-beginning 0))
+                (insert "0:00-24:00 ")))
+            (while (re-search-forward "^ [a-z]" nil t)
+              (goto-char (match-beginning 0))
+              (save-excursion
+                (re-search-backward "^[0-9]+:[0-9]+-[0-9]+:[0-9]+ " nil t))
+              (insert (match-string 0)))))

@@ -9,6 +9,9 @@
       (goto-char (point-max))
       (eval-print-last-sexp))))
 
+;; elpaのレシピが存在しない場合ダウンロードする
+;; (el-get-elpa-build-local-recipes)
+
 ; 自分用のレシピパスを追加する
 (setq el-get-recipe-path (cons "~/.emacs.d/el-get-my-recipes" el-get-recipe-path))
 

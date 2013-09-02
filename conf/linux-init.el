@@ -68,21 +68,3 @@
 ;; https://wiki.ubuntulinux.jp/UbuntuTips/Application/EmacsJapanesePrint
 ;;========================================================
 (setq ps-multibyte-buffer 'non-latin-printer)
-
-;;; 会社の設定
-;;========================================================
-;; 許可証印刷
-;; * tomi-start-to-rem(\C-c,) 印刷したくない許可証をコメント化する
-;; * tomi-remove-rem(\C-c.) 元に戻す
-;;========================================================
-(defun tomi-lpr-to-comment ()
-  "shell-scriptで「lpr ~」となっているものをインタラクティブにコメント化する"
-  (interactive)
-  (goto-char (point-min))
-  (query-replace-regexp "^\\(lpr\\)" "# \\1"))
-
-(defun tomi-remove-comment ()
-  "tomi-start-to-remでコメント化されたものをコメント解除"
-  (interactive)
-  (goto-char (point-min))
-  (replace-regexp "^# \\(lpr\\)" "\\1"))

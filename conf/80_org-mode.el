@@ -58,7 +58,8 @@
       )
 
 ;; org-refileの送り先を指定
-(setq org-refile-targets '((org-agenda-files :level . 1)))
+(setq org-refile-targets '((org-agenda-files :level . 1)
+			   (org-agenda-text-search-extra-files :level . 1)))
 
 ;;========================================================
 ;; org-capture設定

@@ -20,10 +20,6 @@
   (cd "~/.emacs.d/el-get")
   (normal-top-level-add-subdirs-to-load-path))
 (setq load-path (cons "~/.emacs.d/el-get" load-path))
-
-(with-temp-buffer
-  (cd "~/.emacs.d/elisp")
-  (normal-top-level-add-subdirs-to-load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 
 ;;=======================================================================

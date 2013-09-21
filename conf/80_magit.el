@@ -8,3 +8,6 @@
 (set-face-foreground 'magit-diff-del "red")
 ;; 選択項目ハイライトがうっとうしいので背景色と同化
 (set-face-background 'magit-item-highlight "#000000")
+
+;; `M-x magit-status` で選択出来るディレクトリ
+(setq magit-repo-dirs '("~/.emacs.d" "~/.zsh.d" "~/code"))

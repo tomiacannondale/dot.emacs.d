@@ -53,6 +53,7 @@
 	 edit-server
 	 id-manager
 	 yaml-mode
+	 helm-migemo
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

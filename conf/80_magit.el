@@ -14,4 +14,4 @@
 
 ;; 使用するemacsclientを現在のemacsと同じディレクトリにあるemacsclientにする。
 ;; なぜか /usr/bin/emacsclient を呼んでしまう
-(setq magit-emacsclient-executable "emacsclient")
+(setq magit-emacsclient-executable "/usr/local/bin/emacsclient")

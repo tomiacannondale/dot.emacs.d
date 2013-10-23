@@ -9,6 +9,9 @@
       (goto-char (point-max))
       (eval-print-last-sexp))))
 
+;; el-getでのgithubのurlタイプを変更する
+(setq el-get-github-default-url-type "https")
+
 ;; elpaのレシピが存在しない場合ダウンロードする
 ;; (el-get-elpa-build-local-recipes)
 

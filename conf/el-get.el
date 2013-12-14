@@ -57,6 +57,7 @@
 	 id-manager
 	 yaml-mode
 	 helm-migemo
+	 dropdown-list
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

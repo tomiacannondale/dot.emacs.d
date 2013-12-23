@@ -17,3 +17,6 @@
 (define-key dired-mode-map (kbd "RET") 'dired-open-in-accordance-with-situation)
 ;; `a` で新しいバッファで該当のディレクトリ(ファイル)を開く。
 (define-key dired-mode-map (kbd "a") 'dired-find-file)
+
+;; ディレクトリを再帰的にコピーする
+(setq dired-recursive-copies 'always)

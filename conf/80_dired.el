@@ -20,3 +20,6 @@
 
 ;; ディレクトリを再帰的にコピーする
 (setq dired-recursive-copies 'always)
+
+;; diredを2つのウィンドウで開いている時に、デフォルトの移動orコピー先をもう一方のdiredで開いているディレクトリにする
+(setq dired-dwim-target t)

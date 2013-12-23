@@ -84,10 +84,6 @@
 (show-paren-mode 1)
 (setq who-paren-style 'mixed)
 
-;; dired-find-alternate-fileを有効にする
-;; diredの中で `a' 新しいディレクトリを開く時バッファを作らない
-(put 'dired-find-alternate-file 'disabled nil)
-
 ;; kill-ringに同じ内容の文字列を複数入れない
 ;; http://www.fan.gr.jp/~ring/Meadow/meadow.html#ys:trim-whitespaces
 (defadvice kill-new (before ys:no-kill-new-duplicates activate)

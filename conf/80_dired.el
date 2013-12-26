@@ -8,7 +8,6 @@
 (defun dired-open-in-accordance-with-situation ()
   (interactive)
   (let ((file (dired-get-filename nil t)))
-    (print file)
     (if (file-directory-p file)
         (dired-find-alternate-file)
       (dired-find-file))))

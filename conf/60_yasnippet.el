@@ -8,7 +8,7 @@
 
 ; snippet置き場を変更(自分で追加するsnippetは最初のディレクトリになる
 (setq yas-snippet-dirs
-      '("~/.emacs.d/etc/snippets" "/Users/tomi/.emacs.d/el-get/yasnippet/snippets"))
+      '("~/.emacs.d/etc/snippets" "~/.emacs.d/el-get/yasnippet/snippets"))
 
 ; 自分で追加したスニペットはロード時にスニペットディレクトリのロードが必要
 (eval-after-load 'rspec-mode

@@ -12,9 +12,5 @@
 ;; `M-x magit-status` で選択出来るディレクトリ
 (setq magit-repo-dirs '("~/.emacs.d" "~/.zsh.d" "~/code"))
 
-;; 使用するemacsclientを現在のemacsと同じディレクトリにあるemacsclientにする。
-;; なぜか /usr/bin/emacsclient を呼んでしまう
-(setq magit-emacsclient-executable "/usr/local/bin/emacsclient")
-
 ;; magit-status
 (define-key global-map "\C-xvd" 'magit-status)

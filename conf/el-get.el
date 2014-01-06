@@ -58,6 +58,7 @@
 	 yaml-mode
 	 helm-migemo
 	 dropdown-list
+	 japanese-holidays
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

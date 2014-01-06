@@ -2,15 +2,19 @@
 ;; japanese-holiday設定
 ;; auto-install-from-url RET http://www.meadowy.org/meadow/netinstall/export/799/branches/3.00/pkginfo/japanese-holidays/japanese-holidays.el
 ;;========================================================
-(require 'japanese-holidays)
-(setq calendar-holidays
-      (append japanese-holidays local-holidays other-holidays))
-(setq mark-holidays-in-calendar t)
+(eval-after-load "holidays"
+  '(progn
+     (require 'japanese-holidays)
+     (setq calendar-holidays ; 他の国の祝日も表示させたい場合は適当に調整
+           (append japanese-holidays local-holidays other-holidays))
+     (setq mark-holidays-in-calendar t) ; 祝日をカレンダーに表示
+     ;; 土曜日・日曜日を祝日として表示する場合、以下の設定を追加します。
+     ;; デフォルトで設定済み
+     (setq japanese-holiday-weekend '(0 6)     ; 土日を祝日として表示
+           japanese-holiday-weekend-marker     ; 土曜日を水色で表示
+           '(holiday nil nil nil nil nil japanese-holiday-saturday))
+     (add-hook 'calendar-today-visible-hook 'japanese-holiday-mark-weekend)
+     (add-hook 'calendar-today-invisible-hook 'japanese-holiday-mark-weekend)))
 
 ;; “きょう”をマークするには以下の設定を追加します。
-(add-hook 'today-visible-calendar-hook 'calendar-mark-today)
-
-;; 日曜日を赤字にする場合、以下の設定を追加します。
- (setq calendar-weekend-marker 'diary)
- (add-hook 'today-visible-calendar-hook 'calendar-mark-weekend)
- (add-hook 'today-invisible-calendar-hook 'calendar-mark-weekend)
+(add-hook 'calendar-today-visible-hook 'calendar-mark-today)

@@ -16,9 +16,10 @@
 ;;=======================================================================
 ;; ロードパスの設定
 ;;=======================================================================
-(with-temp-buffer
-  (cd "~/.emacs.d/el-get")
-  (normal-top-level-add-subdirs-to-load-path))
+(if (file-exists-p "~/.emacs.d/el-get")
+    (with-temp-buffer
+      (cd "~/.emacs.d/el-get")
+  (normal-top-level-add-subdirs-to-load-path)))
 (setq load-path (cons "~/.emacs.d/el-get" load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 

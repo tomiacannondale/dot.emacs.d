@@ -1,20 +1,4 @@
 ;=======================================================================
-; 実行パスの設定
-;http://sakito.jp/emacs/emacsshell.html#path
-;=======================================================================
-(dolist (dir (list
-	      (expand-file-name "~/.nvm/v0.5.0/bin")
-	      (expand-file-name "~/node_modules/coffee-script/bin")
-              ; brewでインストールされている場所
-              (expand-file-name "/usr/local/bin")
-              ))
-  ;; PATH と exec-path に同じ物を追加します
-  (when (file-exists-p dir)
-    (setenv "PATH" (concat dir ":" (getenv "PATH")))
-    (setq exec-path (append (list dir) exec-path))))
-
-
-;=======================================================================
 ;; フォント設定
 ;=======================================================================
 (set-face-attribute 'default nil :family "ricty" :height 185)

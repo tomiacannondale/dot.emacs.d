@@ -1,20 +1,5 @@
 ;;; マシン固有の設定
 ;=======================================================================
-; 実行パスの設定
-;http://sakito.jp/emacs/emacsshell.html#path
-;=======================================================================
-(dolist (dir (list
-              (expand-file-name "~/local/node/node_modules/coffee-script/bin")
-              (expand-file-name "~/local/node/bin")
-              (expand-file-name "~/.rbenv/shims")
-              (expand-file-name "~/.rbenv/bin")
-              ))
-  ;; PATH と exec-path に同じ物を追加します
-  (when (file-exists-p dir)
-    (setenv "PATH" (concat dir ":" (getenv "PATH")))
-    (setq exec-path (append (list dir) exec-path))))
-
-;=======================================================================
 ;フレームサイズ・位置・色など
 ;=======================================================================
 (setq initial-frame-alist

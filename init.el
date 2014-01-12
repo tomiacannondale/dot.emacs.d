@@ -27,6 +27,11 @@
 (setq load-path (cons "~/.emacs.d/el-get" load-path))
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 
+;; 環境変数をshellから取得
+;; https://github.com/purcell/exec-path-from-shell
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 ;;=======================================================================
 ;; infoディレクトリの設定
 ;;=======================================================================

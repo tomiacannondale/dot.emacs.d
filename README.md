@@ -18,11 +18,6 @@ el-getを使っているので、emacsを起動すると自動的に他のelisp�
   el-getでインストール出来るリポジトリがマーシャルなのでシステムにマーシャルのインストールをする必要がある。
   さらにマーシャルをインストールするにはpythonが必要で。。というところで挫折中。
 
-* japanese-holiday
-
-  emacs23くらいから ```calendar-increment-month``` を ```increment-calendar-month``` に変えないと動かない。
-  この変更したものがネット上で見当たらない。
-
 ## 見せたくない設定の置き場 ##
 
     ~/.emacs.d/conf/local

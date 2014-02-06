@@ -17,3 +17,7 @@
 
 ;; 自動補完を無効
 (custom-set-variables '(helm-ff-auto-update-initial-value nil))
+
+;; isearch時にヒットした箇所をhelmで表示する
+;; http://shibayu36.hatenablog.com/entry/2013/12/30/190354
+(define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)

@@ -59,6 +59,7 @@
 	 helm-migemo
 	 dropdown-list
 	 japanese-holidays
+	 anzu
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

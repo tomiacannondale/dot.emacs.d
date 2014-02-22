@@ -107,6 +107,9 @@
 ;; ediffのコントロールパネルを別frameにしない
 (setq ediff-setup-windows-multiframe 'ediff-setup-windows-plain)
 
+;; recentfで保存するファイル数
+(setq recentf-max-saved-items 1000)
+
 ;;========================================================
 ;; るりまサーチをemacsから検索する
 ;; http://d.hatena.ne.jp/a666666/20110721/1311262558

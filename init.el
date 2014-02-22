@@ -69,8 +69,6 @@
 ;(when (boundp 'show-trailing-whitespace) (setq-default show-trailing-whitespace t))    ;;行末のスペースを強調表示
 
 (setq truncate-partial-width-windows nil)      ;;縦分割したときも行を折り返し
-(setq split-height-threshold nil)              ;;デフォルトで縦分割に
-(setq split-width-threshold 50)                ;;デフォルトで縦分割に
 
 ;; emacsで30分何もしなかったら全てのバッファを保存
 ;; http://d.hatena.ne.jp/authorNari/20110204/1296809004

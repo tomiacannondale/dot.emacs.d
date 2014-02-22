@@ -104,6 +104,9 @@
     (dolist (p (process-list))
       (set-process-query-on-exit-flag p nil))))
 
+;; ediffのコントロールパネルを別frameにしない
+(setq ediff-setup-windows-multiframe 'ediff-setup-windows-plain)
+
 ;;========================================================
 ;; るりまサーチをemacsから検索する
 ;; http://d.hatena.ne.jp/a666666/20110721/1311262558

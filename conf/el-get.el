@@ -60,6 +60,7 @@
 	 dropdown-list
 	 japanese-holidays
 	 anzu
+	 puppet-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

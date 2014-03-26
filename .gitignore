@@ -11,3 +11,4 @@ tramp
 eshell/
 conf/local
 /helm-adaptive-history
+/.cask

@@ -62,6 +62,7 @@
 	 anzu
 	 puppet-mode
 	 flycheck
+	 less-css-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

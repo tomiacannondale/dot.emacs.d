@@ -61,6 +61,7 @@
 	 japanese-holidays
 	 anzu
 	 puppet-mode
+	 flycheck
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

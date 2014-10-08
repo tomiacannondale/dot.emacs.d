@@ -104,9 +104,6 @@
     (dolist (p (process-list))
       (set-process-query-on-exit-flag p nil))))
 
-;; ediffのコントロールパネルを別frameにしない
-(setq ediff-setup-windows-multiframe 'ediff-setup-windows-plain)
-
 ;; recentfで保存するファイル数
 (setq recentf-max-saved-items 1000)
 
@@ -133,14 +130,19 @@
   (let ((word (read-from-minibuffer "search word: ")))
     (browse-url (format "http://x68000.q-e-d.net/~68user/unix/pickup?keyword=%s&target=command" word))))
 
-;;========================================================
-;; 'encoding: utf-8'というshebungを有効にする
-;;========================================================
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ ;;========================================================
+ ;; ediffのコントロールパネルを別frameにしない
+ '(ediff-window-setup-function (quote ediff-setup-windows-plain))
+ '(helm-ff-auto-update-initial-value nil)
+
+ ;;========================================================
+ ;; 'encoding: utf-8'というshebungを有効にする
+ ;;========================================================
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
 ;;; 拡張elispの設定

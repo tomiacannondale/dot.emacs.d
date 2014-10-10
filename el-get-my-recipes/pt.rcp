@@ -1,0 +1,5 @@
+(:name pt
+       :description "An emacs front-end for Pt, the Platinum Searcher"
+       :type github
+       :website "https://github.com/bling/pt.el"
+       :pkgname "bling/pt.el")

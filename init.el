@@ -116,6 +116,7 @@
   "るりまサーチを検索する"
   (interactive)
   (let ((word (read-from-minibuffer "search word: ")))
+    (setq word (url-encode-url word))
     (setq word (replace-regexp-in-string "#" "%23" word))
     (browse-url (format "http://rurema.clear-code.com/query:%s/" word))))
 
@@ -128,6 +129,7 @@
   "unixコマンドを検索する"
   (interactive)
   (let ((word (read-from-minibuffer "search word: ")))
+    (setq word (url-encode-url word))
     (browse-url (format "http://x68000.q-e-d.net/~68user/unix/pickup?keyword=%s&target=command" word))))
 
 (custom-set-variables

@@ -24,7 +24,6 @@
       (append
        '(
 	 init-loader
-	 emacs-w3m-info-ja
 	 helm
 	 ruby-mode
 	 ruby-electric

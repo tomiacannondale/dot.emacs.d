@@ -50,7 +50,6 @@
 	 dsvn
 	 magit
 	 qiita-el
-	 wanderlust-info-ja
 	 rd-mode
 	 edit-server
 	 id-manager

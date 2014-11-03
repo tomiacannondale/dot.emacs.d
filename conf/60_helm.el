@@ -21,3 +21,7 @@
 ;; isearch時にヒットした箇所をhelmで表示する
 ;; http://shibayu36.hatenablog.com/entry/2013/12/30/190354
 (define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
+
+;; temporary
+;; helm-migemoが影響してhelm-switch-bufferが動かない
+(global-set-key "\C-xb" 'switch-to-buffer)

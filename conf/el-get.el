@@ -63,6 +63,7 @@
 	 less-css-mode
 	 haskell-mode
 	 helm-ls-git
+	 helm-ls-git-find-file
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

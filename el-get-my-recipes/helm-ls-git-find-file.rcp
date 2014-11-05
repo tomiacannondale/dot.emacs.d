@@ -1,0 +1,6 @@
+(:name helm-ls-git-find-file
+       :type git
+       :depends helm-ls-git
+       :website "https://gist.github.com/tomiacannondale/a436d8fdd877a4d3dc73"
+       :description "Use find-file and helm-ls-git-ls"
+       :url "https://gist.github.com/a436d8fdd877a4d3dc73.git")

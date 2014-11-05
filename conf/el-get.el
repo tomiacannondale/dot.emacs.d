@@ -62,6 +62,7 @@
 	 flycheck
 	 less-css-mode
 	 haskell-mode
+	 helm-ls-git
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

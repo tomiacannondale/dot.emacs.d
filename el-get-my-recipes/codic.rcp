@@ -1,0 +1,5 @@
+(:name codic
+       :description "Codic for emacs"
+       :type github
+       :website "https://github.com/syohex/emacs-codic"
+       :pkgname "syohex/emacs-codic")

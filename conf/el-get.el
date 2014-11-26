@@ -65,6 +65,7 @@
 	 helm-ls-git
 	 helm-ls-git-find-file
 	 google-translate
+	 codic
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

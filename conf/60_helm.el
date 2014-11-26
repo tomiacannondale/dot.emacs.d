@@ -25,3 +25,6 @@
 ;; temporary
 ;; helm-migemoが影響してhelm-switch-bufferが動かない
 (global-set-key "\C-xb" 'switch-to-buffer)
+
+;; helm-google-suggest
+(define-key my-search-map (kbd "g") 'helm-google-suggest)

@@ -64,6 +64,7 @@
 	 haskell-mode
 	 helm-ls-git
 	 helm-ls-git-find-file
+	 google-translate
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

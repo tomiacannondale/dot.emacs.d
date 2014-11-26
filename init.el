@@ -107,6 +107,13 @@
 ;; recentfで保存するファイル数
 (setq recentf-max-saved-items 1000)
 
+;;;========================================================
+;;; 検索系のkeybind
+;;;========================================================
+(define-prefix-command 'my-search-map)
+(define-key global-map (kbd "\C-cs") 'my-search-map)
+(define-prefix-command 'my-search-map)
+
 ;;========================================================
 ;; るりまサーチをemacsから検索する
 ;; http://d.hatena.ne.jp/a666666/20110721/1311262558

@@ -127,6 +127,8 @@
     (setq word (replace-regexp-in-string "#" "%23" word))
     (browse-url (format "http://rurema.clear-code.com/query:%s/" word))))
 
+(define-key my-search-map (kbd "r") 'rurema-search)
+
 ;;========================================================
 ;; unixの部屋でunixコマンドをemacsから検索する
 ;; http://d.hatena.ne.jp/a666666/20110721/1311262558

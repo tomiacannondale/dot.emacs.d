@@ -141,6 +141,8 @@
     (setq word (url-encode-url word))
     (browse-url (format "http://x68000.q-e-d.net/~68user/unix/pickup?keyword=%s&target=command" word))))
 
+(define-key my-search-map (kbd "m") 'man-search)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -13,3 +13,4 @@ conf/local
 /helm-adaptive-history
 /.cask
 /elpa/
+/url/

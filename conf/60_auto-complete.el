@@ -10,5 +10,8 @@
 
 (defun ac-ruby-mode-setup ()
   (setq-default ac-sources '(ac-source-yasnippet)))
+(defun ac-hasckell-mode-setup ()
+  (setq-default ac-sources '(ac-source-yasnippet)))
 
 (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
+(add-hook 'haskell-mode-hook 'ac-hasckell-mode-setup)

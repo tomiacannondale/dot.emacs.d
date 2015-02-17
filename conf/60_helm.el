@@ -24,3 +24,6 @@
 
 ;; helm-google-suggest
 (define-key my-search-map (kbd "g") 'helm-google-suggest)
+
+;; helm-find-fileで絶対パスを表示
+(setq helm-ff-transformer-show-only-basename nil)

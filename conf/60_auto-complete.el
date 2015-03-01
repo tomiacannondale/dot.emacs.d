@@ -8,10 +8,14 @@
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
+(setq my-yasnippet-ac-sources
+      '(ac-source-abbrev ac-source-words-in-same-mode-buffers ac-source-imenu ac-source-yasnippet))
+
 (defun ac-ruby-mode-setup ()
-  (setq-default ac-sources '(ac-source-yasnippet)))
+  (setq-default ac-sources my-yasnippet-ac-sources))
+
 (defun ac-hasckell-mode-setup ()
-  (setq-default ac-sources '(ac-source-yasnippet)))
+  (setq-default ac-sources my-yasnippet-ac-sources))
 
 (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
 (add-hook 'haskell-mode-hook 'ac-hasckell-mode-setup)

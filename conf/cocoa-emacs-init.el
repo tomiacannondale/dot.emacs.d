@@ -43,7 +43,8 @@
 (setq ns-alternate-modifier (quote super))
 
 ;; indent-regionのキーバインド(macでは\がうまくきかない)
-(define-key global-map "\C-\M-^" 'indent-region)
+(global-set-key (kbd "C-M-¥") 'indent-region)
+
 
 ;; ドラックドロップでをファイルを開く
 ;; http://macemacsjp.sourceforge.jp/index.php?CocoaEmacs#tc915aeb

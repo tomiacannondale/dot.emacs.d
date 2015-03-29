@@ -66,6 +66,7 @@
 	 google-translate
 	 codic
 	 ace-jump-mode
+	 expand-region
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

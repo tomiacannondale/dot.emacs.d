@@ -65,6 +65,7 @@
 	 helm-ls-git-find-file
 	 google-translate
 	 codic
+	 ace-jump-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

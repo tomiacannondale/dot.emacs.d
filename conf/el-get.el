@@ -67,6 +67,7 @@
 	 codic
 	 ace-jump-mode
 	 expand-region
+	 multiple-cursors
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

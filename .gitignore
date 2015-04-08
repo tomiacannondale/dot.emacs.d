@@ -14,3 +14,4 @@ conf/local
 /.cask
 /elpa/
 /url/
+/.mc-lists.el

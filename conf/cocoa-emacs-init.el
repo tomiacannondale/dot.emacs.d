@@ -50,10 +50,6 @@
 ;; recenter-top-bottomのキーバインドを上書き
 (global-set-key "\C-l" 'toggle-truncate-lines)
 
-;; 円マークをバックスラッシュに
-;; https://github.com/emacs-jp/emacs-jp.github.com/issues/22
-(mac-translate-from-yen-to-backslash)
-
 ;;========================================================
 ;; emacsから辞書.appを引く(lookupの代り)
 ;; http://sakito.jp/mac/dictionary.html
@@ -80,3 +76,31 @@
      (concat "dict:///"
              (url-hexify-string (buffer-substring-no-properties beg end))))))
 (define-key global-map (kbd "C-x C-y") 'dictionary)
+
+;; 円マークをバックスラッシュに
+;; https://github.com/emacs-jp/emacs-jp.github.com/issues/22
+;; インラインパッチを使わないでも結構いけるので、この関数だけパッチからもらう
+(defun mac-translate-from-yen-to-backslash ()
+  ;; Convert yen to backslash for JIS keyboard.
+  (interactive)
+
+  (define-key global-map [165] nil)
+  (define-key global-map [2213] nil)
+  (define-key global-map [3420] nil)
+  (define-key global-map [67109029] nil)
+  (define-key global-map [67111077] nil)
+  (define-key global-map [8388773] nil)
+  (define-key global-map [134219941] nil)
+  (define-key global-map [75497596] nil)
+  (define-key global-map [201328805] nil)
+  (define-key function-key-map [165] [?\\])
+  (define-key function-key-map [2213] [?\\]) ;; for Intel
+  (define-key function-key-map [3420] [?\\]) ;; for PowerPC
+  (define-key function-key-map [67109029] [?\C-\\])
+  (define-key function-key-map [67111077] [?\C-\\])
+  (define-key function-key-map [8388773] [?\M-\\])
+  (define-key function-key-map [134219941] [?\M-\\])
+  (define-key function-key-map [75497596] [?\C-\M-\\])
+  (define-key function-key-map [201328805] [?\C-\M-\\])
+)
+(mac-translate-from-yen-to-backslash)

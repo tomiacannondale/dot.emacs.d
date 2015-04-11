@@ -17,5 +17,9 @@
 (defun ac-hasckell-mode-setup ()
   (setq-default ac-sources my-yasnippet-ac-sources))
 
+(defun ac-js2-mode-setup ()
+  (setq-default ac-sources my-yasnippet-ac-sources))
+
 (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
 (add-hook 'haskell-mode-hook 'ac-hasckell-mode-setup)
+(add-hook 'js2-mode-hook 'ac-js2-mode-setup)

@@ -68,6 +68,7 @@
 	 ace-jump-mode
 	 expand-region
 	 multiple-cursors
+	 js2-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

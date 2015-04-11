@@ -69,6 +69,7 @@
 	 expand-region
 	 multiple-cursors
 	 js2-mode
+	 emmet-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

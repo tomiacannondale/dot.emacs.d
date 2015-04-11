@@ -5,9 +5,9 @@
 ;; https://gist.github.com/457761 (migemo.el公開gist)
 ;;========================================================
 (require 'migemo)
-(setq migemo-command "/opt/boxen/homebrew/bin/cmigemo")
+(setq migemo-command "/usr/local/bin/cmigemo")
 (setq migemo-options '("-q" "--emacs"))
-(setq migemo-dictionary "/opt/boxen/homebrew/share/migemo/utf-8/migemo-dict")
+(setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict")
 (setq migemo-coding-system 'utf-8-unix)
 (setq migemo-user-dictionary nil)
 (setq migemo-regex-dictionary nil)

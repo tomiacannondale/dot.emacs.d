@@ -22,4 +22,4 @@
 
 (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
 (add-hook 'haskell-mode-hook 'ac-hasckell-mode-setup)
-(add-hook 'js2-mode-hook 'ac-js2-mode-setup)
+(add-hook 'js2-mode-hook 'ac-html-mode-setup)

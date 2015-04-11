@@ -105,5 +105,5 @@
 ;; org-latexでpdflatexとdvipdfmxを使う
 ;; http://qiita.com/tnoda_/items/6eb4d8d799e41ef3f15d
 ;;========================================================
-(require 'org-latex)
+(require 'ob-latex)
 (setq org-latex-pdf-process '("platex %b" "platex %b" "dvipdfmx %b"))

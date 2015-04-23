@@ -1,7 +1,18 @@
 (require 'multiple-cursors)
-;; 選択しているworkの次の部分をマーク
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-;; 選択しているwordの前のwordをマーク
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-;; 選択しているwordとマッチする全部をマーク
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(global-unset-key "\C-t")
+(smartrep-define-key global-map "C-t"
+  ;; 前をマーク
+  '(("p"      . 'mc/mark-previous-like-this)
+    ;; 次をマーク
+    ("n"      . 'mc/mark-next-like-this)
+    ;; 次をアンマーク
+    ("u" . mc/unmark-next-like-this)
+    ;; 前をアンマーク
+    ("U" . mc/unmark-previous-like-this)
+    ;; 次をスキップ
+    ("s" . mc/skip-to-next-like-this)
+    ;; 前をスキップ
+    ("S" . mc/skip-to-previous-like-this)
+    ;; 全てをマーク
+    ("*"        . 'mc/mark-all-like-this)))

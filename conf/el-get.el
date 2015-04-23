@@ -70,6 +70,7 @@
 	 multiple-cursors
 	 js2-mode
 	 emmet-mode
+	 smartrep
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

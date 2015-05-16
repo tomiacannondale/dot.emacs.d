@@ -30,7 +30,6 @@
 	 ruby-end
 	 inf-ruby
 	 rbenv
-	 helm-rails
 	 rhtml-mode
 	 rspec-mode
 	 feature-mode

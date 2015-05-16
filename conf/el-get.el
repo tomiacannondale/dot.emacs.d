@@ -70,6 +70,7 @@
 	 js2-mode
 	 emmet-mode
 	 smartrep
+	 ace-isearch
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -194,3 +194,11 @@
 ;;; emacsclientを起動できるようにする
 ;;;========================================================
 (server-start)
+
+;; grep系のキーバインド
+(define-prefix-command 'my-grep-map)
+(define-key global-map (kbd "\C-cg") 'my-grep-map)
+(define-prefix-command 'my-grep-map)
+
+(define-key my-grep-map (kbd "p") 'pt-regexp)
+(define-key my-grep-map (kbd "m") 'moccur-grep-find)

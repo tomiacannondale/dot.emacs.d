@@ -1,2 +1,1 @@
-(if (require 'rbenv nil t)
-    (global-rbenv-mode))
+(require 'rbenv nil t)

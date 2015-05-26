@@ -3,7 +3,8 @@
 ;;http://hpcgi1.nifty.com/spen/index.cgi?OrgMode
 ;;========================================================
 (setq load-path (cons "~/.emacs.d/el-get/org-mode/lisp/" load-path))
-(require 'org-install)
+(load "org-version.el")
+(load "org.el")
 
 ;; グローバルなキーバインド設定
 (define-key global-map "\C-cl" 'org-store-link)

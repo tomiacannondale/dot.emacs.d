@@ -160,7 +160,6 @@
  ;;========================================================
  ;; ediffのコントロールパネルを別frameにしない
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
- '(helm-ff-auto-update-initial-value nil)
 
  ;;========================================================
  ;; 'encoding: utf-8'というshebungを有効にする

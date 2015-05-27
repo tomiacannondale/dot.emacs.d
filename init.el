@@ -115,7 +115,7 @@
 (setq blink-cursor-blinks 0)
 
 ;; インデントにtabを使わない
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 ;;;========================================================
 ;;; 検索系のkeybind
 ;;;========================================================

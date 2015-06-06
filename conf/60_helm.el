@@ -2,7 +2,6 @@
 
 (global-set-key "\M-y" 'helm-show-kill-ring)
 (global-set-key "\C-xb" 'helm-buffers-list)
-(global-set-key "\C-c\C-f" 'helm-recentf)
 (global-set-key "\M-x" 'helm-M-x)
 
 (require 'helm-files)                        ;; これをしないと以下の設定がきかない

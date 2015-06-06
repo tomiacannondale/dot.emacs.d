@@ -4,25 +4,26 @@
 (global-set-key "\C-xb" 'helm-buffers-list)
 (global-set-key "\M-x" 'helm-M-x)
 
-(require 'helm-files)                        ;; これをしないと以下の設定がきかない
+(eval-after-load "helm"
+  '(progn
+     ;; helmの選択画面でC-hを有効に
+     ;; https://github.com/emacs-jp/emacs-jp.github.com/issues/47
+     (define-key helm-map (kbd "C-h") 'delete-backward-char)
 
-;; TABで任意補完。選択肢が出てきたらC-nやC-pで上下移動してから決定することも可能
-;; https://github.com/emacs-jp/emacs-jp.github.com/issues/47
-(define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
+     ;; 自動補完を無効
+     (custom-set-variables '(helm-ff-auto-update-initial-value nil))
 
-;; helmの選択画面でC-hを有効に
-;; https://github.com/emacs-jp/emacs-jp.github.com/issues/47
-(define-key helm-map (kbd "C-h") 'delete-backward-char)
+     ;; isearch時にヒットした箇所をhelmで表示する
+     ;; http://shibayu36.hatenablog.com/entry/2013/12/30/190354
+     (define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
 
-;; 自動補完を無効
-(custom-set-variables '(helm-ff-auto-update-initial-value nil))
+     ;; helm-google-suggest
+     (define-key my-search-map (kbd "g") 'helm-google-suggest)))
 
-;; isearch時にヒットした箇所をhelmで表示する
-;; http://shibayu36.hatenablog.com/entry/2013/12/30/190354
-(define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
-
-;; helm-google-suggest
-(define-key my-search-map (kbd "g") 'helm-google-suggest)
-
-;; helm-find-fileで絶対パスを表示
-(setq helm-ff-transformer-show-only-basename nil)
+(eval-after-load "helm-files"
+  '(progn
+     ;; TABで任意補完。選択肢が出てきたらC-nやC-pで上下移動してから決定することも可能
+     ;; https://github.com/emacs-jp/emacs-jp.github.com/issues/47
+     (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
+     ;; helm-find-fileで絶対パスを表示
+     (setq helm-ff-transformer-show-only-basename nil)))

@@ -17,9 +17,6 @@
 (set-default-coding-systems 'utf-8)
 (setq file-name-coding-system 'utf-8)
 
-;;rubyのコーディングコメントをcp932に変更する
-(setq ruby-encoding-map '((shift_jis . cp932) (shift-jis . cp932) (japanese-cp932 . cp932)))
-
 ;;=======================================================================
 ;; ロードパスの設定
 ;;=======================================================================

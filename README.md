@@ -5,6 +5,8 @@
 
     git clone https://github.com/tomiacannondale/dot.emacs.d.git ~/.emacs.d
 	mkdir ~/.emacs.d/elisp
+    cd elisp
+    git clone https://github.com/purcell/exec-path-from-shell.git
 	mkdir ~/.emacs.d/conf/local
 
 el-getを使っているので、emacsを起動すると自動的に他のelispはインストールされる(はず)。

@@ -2,9 +2,9 @@
 ;;org-mode設定
 ;;http://hpcgi1.nifty.com/spen/index.cgi?OrgMode
 ;;========================================================
-(setq load-path (cons "~/.emacs.d/el-get/org-mode/lisp/" load-path))
-(load "org-version.el")
-(load "org.el")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/el-get/org-mode/lisp/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/el-get/org-mode/contrib/lisp") t)
+(require 'org-loaddefs)
 
 ;; グローバルなキーバインド設定
 (define-key global-map "\C-cl" 'org-store-link)
@@ -42,7 +42,7 @@
             (set (make-local-variable 'system-time-locale) "C")))
 
 ;; agenda対象ファイルの指定
-(setq org-agenda-files (list 
+(setq org-agenda-files (list
 			"~/Dropbox/org/task.org"
 			"~/Dropbox/org/project.org"
 			)
@@ -94,12 +94,12 @@
 (setq org-mobile-directory "~/Dropbox/アプリ/MobileOrg")
 
 (setq org-mobile-files
-      (list "~/Dropbox/org/memo.org"
-            "~/Dropbox/org/task.org"
-            "~/Dropbox/org/project.org"
-            "~/Dropbox/org/link.org"
-            "~/Dropbox/org/shops.org"
-            "~/Dropbox/org/iphone.org"
+      (list (expand-file-name "~/Dropbox/org/memo.org")
+            (expand-file-name "~/Dropbox/org/task.org")
+            (expand-file-name "~/Dropbox/org/project.org")
+            (expand-file-name "~/Dropbox/org/link.org")
+            (expand-file-name "~/Dropbox/org/shops.org")
+            (expand-file-name "~/Dropbox/org/iphone.org")
             ))
 
 ;;========================================================

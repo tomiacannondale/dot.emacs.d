@@ -3,6 +3,7 @@
 (global-set-key "\M-y" 'helm-show-kill-ring)
 (global-set-key "\C-xb" 'helm-buffers-list)
 (global-set-key "\M-x" 'helm-M-x)
+(global-set-key "\M-gm" 'helm-all-mark-rings)
 
 (eval-after-load "helm"
   '(progn

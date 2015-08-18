@@ -1,0 +1,5 @@
+(:name ox-qmd
+       :description "Qiita Markdown Back-End for Org Export Engine"
+       :type github
+       :website "https://github.com/0x60df/ox-qmd"
+       :pkgname "0x60df/ox-qmd")

@@ -108,3 +108,8 @@
 ;;========================================================
 (require 'ob-latex)
 (setq org-latex-pdf-process '("platex %b" "platex %b" "dvipdfmx %b"))
+
+;;========================================================
+;; Github Flavored Markdown export for Org Mode
+;;========================================================
+(require 'ox-gfm)

@@ -71,6 +71,7 @@
 	 emmet-mode
 	 smartrep
 	 ace-isearch
+         ox-qmd
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

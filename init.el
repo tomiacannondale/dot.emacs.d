@@ -20,16 +20,16 @@
 ;;=======================================================================
 ;; ロードパスの設定
 ;;=======================================================================
-(if (file-exists-p "~/.emacs.d/el-get")
-    (with-temp-buffer
-      (cd "~/.emacs.d/el-get")
-  (normal-top-level-add-subdirs-to-load-path)))
-(if (file-exists-p "~/.emacs.d/elisp")
-    (with-temp-buffer
-      (cd "~/.emacs.d/elisp")
-  (normal-top-level-add-subdirs-to-load-path)))
-(setq load-path (cons "~/.emacs.d/el-get" load-path))
-(setq load-path (cons "~/.emacs.d/elisp" load-path))
+(let ((el-get-path (expand-file-name "~/.emacs.d/el-get"))
+      (elisp-path (expand-file-name "~/.emacs.d/elisp")))
+      (if (file-exists-p el-get-path)
+          (with-temp-buffer
+            (cd el-get-path)
+            (normal-top-level-add-subdirs-to-load-path)))
+      (if (file-exists-p elisp-path)
+          (with-temp-buffer
+            (cd elisp-path)
+            (normal-top-level-add-subdirs-to-load-path))))
 
 ;; 環境変数をshellから取得
 ;; https://github.com/purcell/exec-path-from-shell

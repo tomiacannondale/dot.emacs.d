@@ -206,3 +206,5 @@
 
 (define-key my-grep-map (kbd "p") 'pt-regexp)
 (define-key my-grep-map (kbd "m") 'moccur-grep-find)
+
+(setq recentf-save-file (expand-file-name "~/.recentf"))

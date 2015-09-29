@@ -72,6 +72,7 @@
 	 smartrep
 	 ace-isearch
          ox-qmd
+         pt
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

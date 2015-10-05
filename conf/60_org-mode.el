@@ -113,3 +113,11 @@
 ;; Github Flavored Markdown export for Org Mode
 ;;========================================================
 (require 'ox-gfm)
+
+;;========================================================
+;; hook
+;;========================================================
+(add-hook 'org-mode-hook
+          ;; org-time-stamp-inactiveのkeybindがflycheckに横取りされちゃう
+          '(lambda () (flycheck-mode -1)))
+

@@ -108,7 +108,8 @@
     (dolist (p (process-list))
       (set-process-query-on-exit-flag p nil))))
 
-;; recentfで保存するファイル数
+;; recentf
+(recentf-mode 1)
 (setq recentf-max-saved-items 1000)
 
 ;; バッファの再読み込み

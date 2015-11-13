@@ -73,6 +73,7 @@
 	 ace-isearch
          ox-qmd
          pt
+         bundler
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -111,6 +111,7 @@
 ;; recentf
 (recentf-mode 1)
 (setq recentf-max-saved-items 1000)
+(setq recentf-save-file (expand-file-name "~/.recentf"))
 
 ;; バッファの再読み込み
 ;; http://blog.shibayu36.org/entry/2012/12/29/001418
@@ -207,5 +208,3 @@
 
 (define-key my-grep-map (kbd "p") 'pt-regexp)
 (define-key my-grep-map (kbd "m") 'moccur-grep-find)
-
-(setq recentf-save-file (expand-file-name "~/.recentf"))

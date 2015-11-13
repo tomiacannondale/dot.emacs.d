@@ -22,3 +22,9 @@
 
 ;; diredを2つのウィンドウで開いている時に、デフォルトの移動orコピー先をもう一方のdiredで開いているディレクトリにする
 (setq dired-dwim-target t)
+
+;; 普通のバッファのようにファイル名とかを変更する
+(eval-after-load "dired"
+  '(lambda ()
+     (define-key 'dired-mode-map "r" 'wdired-change-to-wdired-mode)))
+

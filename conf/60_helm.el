@@ -19,7 +19,11 @@
      (define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
 
      ;; helm-google-suggest
-     (define-key my-search-map (kbd "g") 'helm-google-suggest)))
+     (define-key my-search-map (kbd "g") 'helm-google-suggest)
+
+     ;; helm-migemo
+     (helm-migemo-mode 1)
+     ))
 
 (eval-after-load "helm-files"
   '(progn

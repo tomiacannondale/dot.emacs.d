@@ -52,7 +52,6 @@
 	 edit-server
 	 id-manager
 	 yaml-mode
-	 helm-migemo
 	 dropdown-list
 	 japanese-holidays
 	 anzu

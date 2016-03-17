@@ -126,6 +126,11 @@
 ;; window間の移動(shift + 矢印で移動可能)
 (windmove-default-keybindings)
 
+;; カーソル移動無しで1行だけスクロール
+;; http://d.hatena.ne.jp/uhiaha888/20101110/1289399913
+(global-set-key "\M-n" (lambda () (interactive) (scroll-up 1)))
+(global-set-key "\M-p" (lambda () (interactive) (scroll-down 1)))
+
 ;;;========================================================
 ;;; 検索系のkeybind
 ;;;========================================================

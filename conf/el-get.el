@@ -73,6 +73,7 @@
          ox-qmd
          pt
          bundler
+         auto-save-buffers
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

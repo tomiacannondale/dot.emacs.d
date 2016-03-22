@@ -1,0 +1,4 @@
+(:name auto-save-buffers
+       :description "auto save buffers"
+       :type http
+       :url "http://0xcc.net/misc/auto-save/auto-save-buffers.el")

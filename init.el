@@ -74,10 +74,6 @@
 
 (setq truncate-partial-width-windows nil)      ;;縦分割したときも行を折り返し
 
-;; emacsで30分何もしなかったら全てのバッファを保存
-;; http://d.hatena.ne.jp/authorNari/20110204/1296809004
-(run-with-idle-timer 1800 t 'save-current-configuration)
-
 ;; ファイル名が重複していたらディレクトリ名を追加する。
 ;; http://www.clear-code.com/blog/2011/2/16.html
 (require 'uniquify)

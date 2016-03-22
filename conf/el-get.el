@@ -74,6 +74,7 @@
          pt
          bundler
          auto-save-buffers
+         electric-spacing-xwl
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

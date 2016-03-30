@@ -73,6 +73,7 @@
          ox-qmd
          pt
          bundler
+         shackle
          auto-save-buffers
          electric-spacing-xwl
          mic-paren

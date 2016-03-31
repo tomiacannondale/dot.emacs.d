@@ -75,7 +75,7 @@
          bundler
          shackle
          auto-save-buffers
-         electric-spacing-xwl
+         electric-spacing
          mic-paren
 	 )
        (mapcar 'el-get-source-name el-get-sources)))

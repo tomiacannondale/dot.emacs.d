@@ -1,6 +1,0 @@
-;; https://github.com/zk-phi/electric-spacingが別にあるけど(el-getにはこっちが登録されてる)使えない
-(:name electric-spacing-xwl
-       :description "Insert operators with surrounding spaces smartly. (Refactored and successor of smart-operator.el)."
-       :type github
-       :website "https://github.com/xwl/electric-spacing"
-       :pkgname "xwl/electric-spacing")

@@ -2,4 +2,5 @@
        :description "This utility manages ID-password list and generates passwords"
        :type github
        :website "https://github.com/kiwanami/emacs-id-manager"
+       :autoloads nil
        :pkgname "kiwanami/emacs-id-manager")

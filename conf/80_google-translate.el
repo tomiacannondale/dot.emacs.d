@@ -24,7 +24,5 @@
      (if asciip "ja" "en")
      string)))
 
-(push '("\*Google Translate\*" :height 0.5 :stick t) popwin:special-display-config)
-
 (global-unset-key (kbd "C-M-t"))
 (global-set-key (kbd "C-M-t") 'google-translate-enja-or-jaen)

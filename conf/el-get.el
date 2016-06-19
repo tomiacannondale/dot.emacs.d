@@ -76,6 +76,7 @@
          shackle
          auto-save-buffers
          mic-paren
+         wgrep
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

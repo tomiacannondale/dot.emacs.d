@@ -8,10 +8,9 @@
 (add-to-list 'auto-mode-alist '("\\.prawn$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
-(eval-after-load 'ruby-mode
-     (setq ruby-insert-encoding-magic-comment nil)
-     )
+(with-eval-after-load 'ruby-mode
+  (setq ruby-insert-encoding-magic-comment nil)
+  )
 
 ;; 定義ブロック補完
-(require 'ruby-electric)
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))

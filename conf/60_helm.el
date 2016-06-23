@@ -18,9 +18,6 @@
      ;; http://shibayu36.hatenablog.com/entry/2013/12/30/190354
      (define-key isearch-mode-map (kbd "C-o") 'helm-occur-from-isearch)
 
-     ;; helm-google-suggest
-     (define-key my-search-map (kbd "g") 'helm-google-suggest)
-
      ;; helm-migemo
      (helm-migemo-mode 1)
      ))

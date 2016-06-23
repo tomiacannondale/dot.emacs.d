@@ -1,0 +1,5 @@
+(:name search-web
+       :description "Post web search queries using `browse-url'."
+       :type github
+       :website "https://github.com/tomoya/search-web.el"
+       :pkgname "tomoya/search-web.el")

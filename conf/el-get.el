@@ -77,6 +77,7 @@
          auto-save-buffers
          mic-paren
          wgrep
+         search-web
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

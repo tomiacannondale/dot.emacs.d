@@ -72,9 +72,10 @@
         (setq beg (progn (backward-word) (point)))
         ))
 
-    (browse-url
-     (concat "dict:///"
-             (url-hexify-string (buffer-substring-no-properties beg end))))))
+    ;; search-web + shackleで使用すると`browse-url-default-browser'が更新されないのでopenコマンドで代用
+    (call-process "open" nil nil nil
+                  (concat "dict:///"
+                          (url-hexify-string (buffer-substring-no-properties beg end))))))
 (define-key global-map (kbd "C-x C-y") 'dictionary)
 
 ;; 円マークをバックスラッシュに

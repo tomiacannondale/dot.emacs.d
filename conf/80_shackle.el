@@ -1,7 +1,7 @@
 (require 'shackle)
 (setq shackle-rules
       '(
-        ('("*Google Translate*" "*Codic Result*") :align below :ratio 0.4 :select t)
+        ('("*Google Translate*" "*Codic Result*" "*eww*") :align below :size 0.4)
         ))
 (shackle-mode 1)
 

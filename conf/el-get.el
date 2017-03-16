@@ -78,6 +78,7 @@
          mic-paren
          wgrep
          search-web
+         crontab-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

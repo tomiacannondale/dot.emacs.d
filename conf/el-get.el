@@ -79,6 +79,7 @@
          wgrep
          search-web
          crontab-mode
+         dockerfile-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

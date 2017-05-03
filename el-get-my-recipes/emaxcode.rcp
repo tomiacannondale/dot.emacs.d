@@ -1,0 +1,6 @@
+(:name emaxcode
+       :description "Emacs setting for Objective-C, Xcode."
+       :type github
+       :depends: (s.el auto-complete yasnippet helm)
+       :website "https://github.com/ShingoFukuyama/emaXcode"
+       :pkgname "tomoya/search-web.el")

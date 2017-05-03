@@ -80,6 +80,7 @@
          search-web
          crontab-mode
          dockerfile-mode
+         emaxcode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -20,9 +20,13 @@
 (defun ac-js2-mode-setup ()
   (setq-default ac-sources my-yasnippet-ac-sources))
 
+(defun ac-objc-mode-setup ()
+  (setq-default ac-sources my-yasnippet-ac-sources))
+
 (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
 (add-hook 'haskell-mode-hook 'ac-hasckell-mode-setup)
 (add-hook 'js2-mode-hook 'ac-js2-mode-setup)
+(add-hook 'objc-mode-hook 'ac-objc-mode-setup)
 
 (custom-set-faces
  '(ac-yasnippet-candidate-face ((t (:inherit ac-candidate-face))))

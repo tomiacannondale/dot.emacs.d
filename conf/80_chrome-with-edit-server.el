@@ -6,3 +6,4 @@
 ;;========================================================
 (require 'edit-server nil t)
 (edit-server-start)
+(setq edit-server-new-frame nil)

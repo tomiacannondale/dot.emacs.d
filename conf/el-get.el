@@ -81,6 +81,7 @@
          crontab-mode
          dockerfile-mode
          emaxcode
+         helm-qiita
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -16,3 +16,4 @@ conf/local
 /url/
 /.mc-lists.el
 bookmarks
+/helm-qiita

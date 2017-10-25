@@ -1,0 +1,6 @@
+(:name helm-qiita
+       :description "Qiita with helm interface"
+       :type github
+       :website "https://github.com/masutaka/emacs-helm-qiita"
+       :depends (helm)
+       :pkgname "masutaka/emacs-helm-qiita")

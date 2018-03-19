@@ -116,3 +116,7 @@
           ;; org-time-stamp-inactiveのkeybindがflycheckに横取りされちゃう
           '(lambda () (flycheck-mode -1)))
 
+
+(with-eval-after-load 'org
+  ;; <s<TAB>とかでブロックテンプレート(structure template)を使う
+  (require 'org-tempo))

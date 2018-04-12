@@ -82,6 +82,7 @@
          dockerfile-mode
          emaxcode
          helm-qiita
+         guide-key
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

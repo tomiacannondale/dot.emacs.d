@@ -16,3 +16,7 @@
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 ;; ruby-modeの時は行末の空白を目立たせる
 (add-hook 'ruby-mode-hook '(lambda () (setq-local show-trailing-whitespace t)))
+;; デフォルトのチェッカーをrubyにする
+;; 必要に応じて.dir-locals.elを以下のように設定
+;;    ((ruby-mode . ((eval . (lambda () setq-local flycheck-checker 'ruby-rubocop)))))
+(add-hook 'ruby-mode-hook '(lambda () (setq-local flycheck-checker 'ruby)))

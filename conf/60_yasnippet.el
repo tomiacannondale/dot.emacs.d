@@ -13,3 +13,7 @@
 ; 自分で追加したスニペットはロード時にスニペットディレクトリのロードが必要
 (eval-after-load 'rspec-mode
   (yas-load-directory "~/.emacs.d/etc/snippets"))
+
+(custom-set-faces
+ '(ac-yasnippet-candidate-face ((t (:inherit ac-candidate-face))))
+ '(ac-yasnippet-selection-face ((t (:inherit ac-selection-face)))))

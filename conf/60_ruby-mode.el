@@ -14,3 +14,5 @@
 
 ;; 定義ブロック補完
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
+;; ruby-modeの時は行末の空白を目立たせる
+(add-hook 'ruby-mode-hook '(lambda () (setq-local show-trailing-whitespace t)))

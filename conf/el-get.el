@@ -40,6 +40,7 @@
 	 markdown-mode
 	 auto-complete
 	 yasnippet
+         yasnippet-snippets
 	 color-moccur
 	 graphviz-dot-mode
 	 moccur-edit

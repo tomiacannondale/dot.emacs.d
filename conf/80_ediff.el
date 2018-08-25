@@ -1,0 +1,13 @@
+(add-hook 'ediff-load-hook
+          (lambda ()
+            (set-face-foreground ediff-current-diff-face-A "#eecccc")
+            (set-face-background ediff-current-diff-face-A "#663333")
+            (set-face-foreground ediff-current-diff-face-B "#cceecc")
+            (set-face-background ediff-current-diff-face-B "#336633")
+            (set-face-foreground ediff-even-diff-face-A "black")
+            (set-face-foreground ediff-even-diff-face-B "black")
+            (set-face-foreground ediff-even-diff-face-C "black")
+            (set-face-foreground ediff-odd-diff-face-A "black")
+            (set-face-foreground ediff-odd-diff-face-B "black")
+            (set-face-foreground ediff-odd-diff-face-C "black")
+            ))

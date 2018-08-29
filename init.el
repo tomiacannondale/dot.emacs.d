@@ -141,20 +141,6 @@
 (define-key global-map (kbd "\C-cs") 'my-search-map)
 (define-prefix-command 'my-search-map)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- ;;========================================================
- ;; ediffのコントロールパネルを別frameにしない
- '(ediff-window-setup-function (quote ediff-setup-windows-plain))
-
- ;;========================================================
- ;; 'encoding: utf-8'というshebungを有効にする
- ;;========================================================
- '(safe-local-variable-values (quote ((encoding . utf-8)))))
-
 ;;; 拡張elispの設定
 
 ;; rbenvのインストールの前(el-getのload前)に

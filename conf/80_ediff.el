@@ -1,3 +1,4 @@
+(custome-set-variables '(ediff-window-setup-function (quote ediff-setup-windows-plain)))
 (add-hook 'ediff-load-hook
           (lambda ()
             (set-face-foreground ediff-current-diff-face-A "#eecccc")

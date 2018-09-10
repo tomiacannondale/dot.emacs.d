@@ -84,6 +84,7 @@
          emaxcode
          helm-qiita
          guide-key
+         vue-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

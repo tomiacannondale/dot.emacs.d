@@ -1,0 +1,5 @@
+(:name ssass-mode
+       :description "Write Sass without a Turing Machine"
+       :type github
+       :website "https://github.com/AdamNiederer/ssass-mode"
+       :pkgname "AdamNiederer/ssass-mode")

@@ -1,0 +1,5 @@
+(:name edit-indirect
+       :description "Edit regions in separate buffers"
+       :type github
+       :website "https://github.com/Fanael/edit-indirect"
+       :pkgname "Fanael/edit-indirect")

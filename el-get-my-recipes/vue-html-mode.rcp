@@ -1,0 +1,5 @@
+(:name vue-html-mode
+       :description "A major mode for editing vue templates"
+       :type github
+       :website "https://github.com/AdamNiederer/vue-html-mode"
+       :pkgname "AdamNiederer/vue-html-mode")

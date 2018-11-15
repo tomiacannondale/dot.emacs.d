@@ -85,6 +85,7 @@
          helm-qiita
          guide-key
          vue-mode
+         helm-c-yasnippet
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -87,6 +87,7 @@
          vue-mode
          helm-c-yasnippet
          add-node-modules-path
+         prettier-js
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

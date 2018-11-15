@@ -86,6 +86,7 @@
          guide-key
          vue-mode
          helm-c-yasnippet
+         add-node-modules-path
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

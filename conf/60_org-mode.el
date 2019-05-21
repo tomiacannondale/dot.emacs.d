@@ -79,7 +79,10 @@
        ("l" "Link" entry
 	(file+headline "link.org" "Links")
 	"* [[%c][%?	:link:\n  %u")
-	)
+       ("c" "Code Readings" entry
+        (file+headline "code-reading.org" "Code Readings")
+        "** %? %^g\n   %u\n   %a")
+       )
       )
 
 ;;========================================================

@@ -88,6 +88,7 @@
          helm-c-yasnippet
          add-node-modules-path
          prettier-js
+         ddskk
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

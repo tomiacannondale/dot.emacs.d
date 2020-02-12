@@ -15,7 +15,7 @@
 (require 'skk-study)
 
 (setq skk-large-jisyo
-      (expand-file-name "~/Library/Application Support/AquaSKK/SKK-JISYO.L"))
+      (expand-file-name "~/.skk-get-jisyo/SKK-JISYO.L"))
 
 (when skk-use-color-cursor
   ;; カーソル色を変えてみる

@@ -1,14 +1,14 @@
 ;=======================================================================
 ;; フォント設定
 ;=======================================================================
-(set-face-attribute 'default nil :family "ricty" :height 185)
-(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "ricty"))
+(set-face-attribute 'default nil :family "Ricty Diminished" :height 185)
+(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "Ricty Diminished"))
 ;; http://d.hatena.ne.jp/setoryohei/20110117/1295336454
-(set-fontset-font nil 'japanese-jisx0213.2004-1 (font-spec :family "ricty")) ; 日本語の表示
-(set-fontset-font nil 'japanese-jisx0213-2 (font-spec :family "ricty"))  ; 日本語の表示
-(set-fontset-font nil 'katakana-jisx0201 (font-spec :family "ricty")) ; 半角カナ
-(set-fontset-font nil '(#x0080 . #x024F) (font-spec :family "ricty")) ; 分音符付きラテン 
-(set-fontset-font nil '(#x0370 . #x03FF) (font-spec :family "ricty")) ; ギリシャ文字
+(set-fontset-font nil 'japanese-jisx0213.2004-1 (font-spec :family "Ricty Diminished")) ; 日本語の表示
+(set-fontset-font nil 'japanese-jisx0213-2 (font-spec :family "Ricty Diminished"))  ; 日本語の表示
+(set-fontset-font nil 'katakana-jisx0201 (font-spec :family "Ricty Diminished")) ; 半角カナ
+(set-fontset-font nil '(#x0080 . #x024F) (font-spec :family "Ricty Diminished")) ; 分音符付きラテン
+(set-fontset-font nil '(#x0370 . #x03FF) (font-spec :family "Ricty Diminished")) ; ギリシャ文字
 
 ;=======================================================================
 ;フレームサイズ・位置・色など

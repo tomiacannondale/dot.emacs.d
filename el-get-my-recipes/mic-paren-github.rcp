@@ -1,0 +1,6 @@
+(:name mic-paren-github
+       :description "Advanced highlighting of matching parentheses."
+       :type github
+       :website "https://github.com/emacsattic/mic-paren"
+       :pkgname "emacsattic/mic-paren"
+       )

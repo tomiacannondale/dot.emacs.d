@@ -76,7 +76,7 @@
          bundler
          shackle
          auto-save-buffers
-         mic-paren
+         mic-paren-github
          wgrep
          search-web
          crontab-mode

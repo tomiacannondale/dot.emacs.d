@@ -15,10 +15,13 @@
   (setq ruby-insert-encoding-magic-comment nil)
   )
 
-;; ruby-modeの時は行末の空白を目立たせる
-(add-hook 'ruby-mode-hook '(lambda () (setq-local show-trailing-whitespace t)))
-;; デフォルトのチェッカーをrubyにする
-;; 必要に応じて
-;;     M-x add-dir-local-variable RET ruby-mode RET flycheck-checker RET 'ruby-rubocop RET
-;; とする
-(add-hook 'ruby-mode-hook '(lambda () (setq-local flycheck-checker 'ruby)))
+(add-hook 'ruby-mode-hook '(lambda ()
+                             (progn
+                               ;; ruby-modeの時は行末の空白を目立たせる
+                               (setq-local show-trailing-whitespace t)
+                               ;; デフォルトのチェッカーをrubyにする
+                               ;; 必要に応じて
+                               ;;     M-x add-dir-local-variable RET ruby-mode RET flycheck-checker RET 'ruby-rubocop RET
+                               ;; とする
+                               (setq-local flycheck-checker 'ruby)
+                               )))

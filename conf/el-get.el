@@ -26,7 +26,7 @@
 	 init-loader
 	 helm
 	 ruby-mode
-	 ruby-electric
+         ruby-electric
 	 ruby-end
 	 inf-ruby
 	 rbenv

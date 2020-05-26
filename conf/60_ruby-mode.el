@@ -8,12 +8,13 @@
 (add-to-list 'auto-mode-alist '("\\.prawn$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
+(require 'ruby-electric)
+(require 'ruby-end)
+
 (with-eval-after-load 'ruby-mode
   (setq ruby-insert-encoding-magic-comment nil)
   )
 
-;; 定義ブロック補完
-(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 ;; ruby-modeの時は行末の空白を目立たせる
 (add-hook 'ruby-mode-hook '(lambda () (setq-local show-trailing-whitespace t)))
 ;; デフォルトのチェッカーをrubyにする

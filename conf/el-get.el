@@ -81,7 +81,6 @@
          search-web
          crontab-mode
          dockerfile-mode
-         emaxcode
          helm-qiita
          guide-key
          vue-mode

@@ -14,8 +14,13 @@
 ;; 変換の学習
 (require 'skk-study)
 
-(setq skk-large-jisyo
-      (expand-file-name "~/.skk-get-jisyo/SKK-JISYO.L"))
+;; 個人辞書
+(setq skk-jisyo (expand-file-name "~/Dropbox/skk-dictionaries/skk-jisyo.utf8"))
+(setq skk-jisyo-code 'utf-8)
+
+;; ポート1178は使用済み
+(setq skk-server-host "localhost")
+(setq skk-server-portnum 11178)
 
 (when skk-use-color-cursor
   ;; カーソル色を変えてみる

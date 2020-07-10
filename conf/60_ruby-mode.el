@@ -1,7 +1,6 @@
 ;;==================================================================
 ;; ruby-modeの設定
 ;;==================================================================
-(setq load-path (cons "~/.emacs.d/el-get/ruby-mode" load-path))
 (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))

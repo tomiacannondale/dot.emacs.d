@@ -105,3 +105,10 @@
   (define-key function-key-map [201328805] [?\C-\M-\\])
 )
 (mac-translate-from-yen-to-backslash)
+
+;; isearchで円マーク -> バックスラッシュに変換をする
+;; https://qiita.com/hirokisince1998/items/029741559d7ba7078523
+(defun isearch-add-backslash()
+  (interactive)
+  (isearch-printing-char ?\\ 1))
+(define-key isearch-mode-map [?¥] 'isearch-add-backslash)

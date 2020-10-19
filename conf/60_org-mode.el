@@ -83,26 +83,6 @@
       )
 
 ;;========================================================
-;; mobile-org設定
-;; http://mobileorg.ncogni.to/doc/getting-started/using-dropbox/
-;; http://skalldan.wordpress.com/2011/08/18/iphone-%E3%81%A7-org-capture/
-;;========================================================
-;; Set to the location of your Org files on your local system
-;; Set to the name of the file where new notes will be stored
-(setq org-mobile-inbox-for-pull "~/Dropbox/org/iphone.org")
-;; Set to <your Dropbox root directory>/MobileOrg.
-(setq org-mobile-directory "~/Dropbox/アプリ/MobileOrg")
-
-(setq org-mobile-files
-      (list (expand-file-name "~/Dropbox/org/memo.org")
-            (expand-file-name "~/Dropbox/org/task.org")
-            (expand-file-name "~/Dropbox/org/project.org")
-            (expand-file-name "~/Dropbox/org/link.org")
-            (expand-file-name "~/Dropbox/org/shops.org")
-            (expand-file-name "~/Dropbox/org/iphone.org")
-            ))
-
-;;========================================================
 ;; org-latexでpdflatexとdvipdfmxを使う
 ;; http://qiita.com/tnoda_/items/6eb4d8d799e41ef3f15d
 ;;========================================================

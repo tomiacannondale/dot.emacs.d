@@ -48,7 +48,6 @@
 	 migemo
 	 dsvn
 	 magit
-	 qiita-el
 	 rd-mode
 	 edit-server
 	 id-manager

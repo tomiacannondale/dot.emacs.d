@@ -2,6 +2,11 @@
 (require 'google-translate)
 (require 'google-translate-default-ui)
 
+;; https://github.com/yuravg/.emacs.d/commit/51feb9a59b29dbe93eb7dc5058625c13d973c304
+;; https://github.com/atykhonov/google-translate/issues/52
+(setq google-translate-backend-method 'curl)
+(defun google-translate--search-tkk () "Search TKK." (list 430675 2721866130))
+
 (defvar google-translate-english-chars "[:ascii:]"
   "これらの文字が含まれているときは英語とみなす")
 (defun google-translate-enja-or-jaen (&optional string)

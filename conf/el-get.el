@@ -87,6 +87,7 @@
          add-node-modules-path
          prettier-js
          ddskk
+         rainbow-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

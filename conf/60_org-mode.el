@@ -2,9 +2,10 @@
 ;;org-mode設定
 ;;http://hpcgi1.nifty.com/spen/index.cgi?OrgMode
 ;;========================================================
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/el-get/org-mode/lisp/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/el-get/org-mode/contrib/lisp") t)
 (require 'org-loaddefs)
+(require 'org-agenda)
+(require 'org-capture)
+
 
 ;; グローバルなキーバインド設定
 (define-key global-map "\C-cl" 'org-store-link)

@@ -44,7 +44,6 @@
 	 color-moccur
 	 graphviz-dot-mode
 	 moccur-edit
-	 org-mode
 	 migemo
 	 dsvn
 	 magit

@@ -1,7 +1,9 @@
-;;========================================================
-;; japanese-holiday設定
-;; auto-install-from-url RET http://www.meadowy.org/meadow/netinstall/export/799/branches/3.00/pkginfo/japanese-holidays/japanese-holidays.el
-;;========================================================
+;;; 80_japanese-holiday --- japanese-hoilday setting file
+
+;;; Commentary:
+
+;;; Code:
+
 (with-eval-after-load "calendar"
   (require 'japanese-holidays)
   (setq calendar-holidays ; 他の国の祝日も表示させたい場合は適当に調整
@@ -14,3 +16,5 @@
         '(holiday nil nil nil nil nil japanese-holiday-saturday))
   (add-hook 'calendar-today-visible-hook 'japanese-holiday-mark-weekend)
   (add-hook 'calendar-today-invisible-hook 'japanese-holiday-mark-weekend))
+
+;;; 80_japanese-holiday.el ends here

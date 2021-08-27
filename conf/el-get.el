@@ -87,6 +87,7 @@
          prettier-js
          ddskk
          rainbow-mode
+         docker-tramp
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

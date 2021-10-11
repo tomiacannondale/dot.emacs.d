@@ -10,3 +10,6 @@
 
 (eval-after-load 'flycheck
   '(my-add-eslint-to-flycheck))
+
+(setq mmm-js-mode-enter-hook (lambda () (setq syntax-ppss-table nil)))
+(setq mmm-typescript-mode-enter-hook (lambda () (setq syntax-ppss-table nil)))

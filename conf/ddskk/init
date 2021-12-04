@@ -44,4 +44,5 @@
   (set-face-foreground 'skk-prefix-katakana-face skk-cursor-katakana-color)
   (set-face-foreground 'skk-prefix-jisx0201-face skk-cursor-jisx0201-color))
 
+(setq skk-show-inline 'vertical)
 ;;; init ends here

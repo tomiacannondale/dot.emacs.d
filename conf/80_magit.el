@@ -1,3 +1,9 @@
+;;; 80_magit --- magit setting file
+
+;;; Commentary:
+
+;;; Code:
+
 (require 'magit)
 
 ;; `M-x magit-status` で選択出来るディレクトリ
@@ -11,3 +17,6 @@
 
 ;; magit-status
 (define-key global-map "\C-xvd" 'magit-status)
+
+(provide '80_magit)
+;;; 80_magit.el ends here

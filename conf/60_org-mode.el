@@ -82,6 +82,9 @@
        ("c" "Code Readings" entry
         (file+headline "code-reading.org" "Code Readings")
         "** %? %^g\n   %u\n   %a")
+       ("i" "Inbox" entry
+        (file+headline "inbox.org" "Inbox")
+        "** %?\n   %u\n")
        )
       )
 

@@ -57,7 +57,6 @@
 	 puppet-mode
 	 flycheck
 	 less-css-mode
-	 haskell-mode
 	 helm-ls-git
 	 helm-ls-git-find-file
 	 google-translate
@@ -79,7 +78,6 @@
          search-web
          crontab-mode
          dockerfile-mode
-         helm-qiita
          guide-key
          vue-mode
          helm-c-yasnippet

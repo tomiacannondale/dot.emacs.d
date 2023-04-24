@@ -87,6 +87,7 @@
          rainbow-mode
          docker-tramp
          python-mode
+         highlight-indentation-guides
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -17,3 +17,7 @@ conf/local
 /.mc-lists.el
 bookmarks
 /helm-qiita
+/conf/ddskk/emacs-id
+/network-security.data
+/transient/
+/tutorial/

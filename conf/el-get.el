@@ -89,6 +89,7 @@
          python-mode
          highlight-indentation-guides
          typescript-mode
+         editorconfig
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -100,7 +100,7 @@
 ;;========================================================
 (add-hook 'org-mode-hook
           ;; org-time-stamp-inactiveのkeybindがflycheckに横取りされちゃう
-          '(lambda () (flycheck-mode -1)))
+          #'(lambda () (flycheck-mode -1)))
 
 
 (with-eval-after-load 'org

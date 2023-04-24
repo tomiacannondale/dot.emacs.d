@@ -4,5 +4,5 @@
 ;;========================================================
 (require 'haml-mode)
 (add-hook 'haml-mode-hook
-  '(lambda ()
+  #'(lambda ()
      (setq indent-tabs-mode nil)))

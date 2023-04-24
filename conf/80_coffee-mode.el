@@ -12,5 +12,5 @@
  (set (make-local-variable 'tab-width) 2))
 
 (add-hook 'coffee-mode-hook
-  '(lambda() (coffee-custom)))
+  #'(lambda() (coffee-custom)))
 (define-key coffee-mode-map "\C-c\C-c" 'coffee-compile-file)

@@ -14,7 +14,7 @@
   (setq ruby-insert-encoding-magic-comment nil)
   )
 
-(add-hook 'ruby-mode-hook '(lambda ()
+(add-hook 'ruby-mode-hook #'(lambda ()
                              (progn
                                ;; ruby-modeの時は行末の空白を目立たせる
                                (setq-local show-trailing-whitespace t)

@@ -88,6 +88,7 @@
          docker-tramp
          python-mode
          highlight-indentation-guides
+         typescript-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

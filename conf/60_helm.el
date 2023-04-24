@@ -1,4 +1,4 @@
-(require 'helm-config)
+(require 'helm)
 
 (global-set-key "\M-y" 'helm-show-kill-ring)
 (global-set-key "\C-xb" 'helm-buffers-list)

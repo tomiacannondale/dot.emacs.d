@@ -2,6 +2,14 @@
 ;;org-mode設定
 ;;http://hpcgi1.nifty.com/spen/index.cgi?OrgMode
 ;;========================================================
+
+;; カレンダーで日付の移動keyを可能にする(shift-<cursol>)
+;; org-mode infoより
+;; `S-<UP>` -> `M-p`              `S-<DOWN>` -> `M-n`
+;; `S-<LEFT>` -> `M--`            `S-<RIGHT>` -> `M-+`
+;; `C-S-<LEFT>` -> `M-S--`        `C-S-<RIGHT>` -> `M-S-+`
+(setq org-replace-disputed-keys t)
+
 (require 'org-loaddefs)
 (require 'org-agenda)
 (require 'org-capture)

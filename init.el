@@ -177,3 +177,7 @@
 
 (define-key my-grep-map (kbd "p") 'pt-regexp)
 (define-key my-grep-map (kbd "m") 'moccur-grep-find)
+
+;; https://emacs.stackexchange.com/questions/74289/emacs-28-2-error-in-macos-ventura-image-type-invalid-image-type-svg
+;; ewwを使うと  "image-type: Invalid image type `svg`" となる
+(add-to-list 'image-types 'svg)

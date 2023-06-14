@@ -2,4 +2,4 @@
 ;; rhtml-mode設定
 ;;  git clone git://github.com/eschulte/rhtml.git
 ;;==================================================================
-(require 'rhtml-mode)
+;; (require 'rhtml-mode)

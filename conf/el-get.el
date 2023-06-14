@@ -90,6 +90,7 @@
          highlight-indentation-guides
          typescript-mode
          editorconfig
+         web-mode
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

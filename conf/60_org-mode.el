@@ -53,6 +53,7 @@
 (setq org-agenda-files (list
 			"~/Dropbox/org/task.org"
 			"~/Dropbox/org/project.org"
+			"~/Dropbox/org/inbox.org"
 			)
       )
 
@@ -63,6 +64,7 @@
        "~/Dropbox/org/link.org"
        "~/Dropbox/org/memo.org"
        "~/Dropbox/org/shops.org"
+       "~/Dropbox/org/inbox.org"
        )
       )
 

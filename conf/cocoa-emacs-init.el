@@ -50,33 +50,18 @@
 ;; recenter-top-bottomのキーバインドを上書き
 (global-set-key "\C-l" 'toggle-truncate-lines)
 
-;;========================================================
-;; emacsから辞書.appを引く(lookupの代り)
-;; http://sakito.jp/mac/dictionary.html
-;;========================================================
-(defun dictionary ()
-  "dictionary.app"
+;; emacsからウィズダムとかジーニアス大辞典を引く
+;; https://gist.github.com/skoji/936a89f5e1e7c6f93d4a216175408659
+(defun monokakido-lookup (word)
+  "Lookup word with Dictionaries.app by Monokakido"
+  (call-process "open" nil 0 nil (concat "mkdictionaries:///?text=" word)))
+
+(defun monokakido-lookup-word ()
+  "Lookup the word at point with Dictionaries.app by Monokakido."
   (interactive)
+  (monokakido-lookup (read-from-minibuffer "Monokakido: " (current-word))))
 
-  (let ((editable (not buffer-read-only))
-        (pt (save-excursion (mouse-set-point last-nonmenu-event)))
-        beg end)
-
-    (if (and mark-active
-             (<= (region-beginning) pt) (<= pt (region-end)) )
-        (setq beg (region-beginning)
-              end (region-end))
-      (save-excursion
-        (goto-char pt)
-        (setq end (progn (forward-word) (point)))
-        (setq beg (progn (backward-word) (point)))
-        ))
-
-    ;; search-web + shackleで使用すると`browse-url-default-browser'が更新されないのでopenコマンドで代用
-    (call-process "open" nil nil nil
-                  (concat "dict:///"
-                          (url-hexify-string (buffer-substring-no-properties beg end))))))
-(define-key global-map (kbd "C-x C-y") 'dictionary)
+(define-key global-map (kbd "C-x C-y") 'monokakido-lookup-word)
 
 ;; 円マークをバックスラッシュに
 ;; https://github.com/emacs-jp/emacs-jp.github.com/issues/22

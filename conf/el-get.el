@@ -91,6 +91,7 @@
          typescript-mode
          editorconfig
          web-mode
+         string-inflection
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -78,7 +78,6 @@
          crontab-mode
          dockerfile-mode
          guide-key
-         vue-mode
          helm-c-yasnippet
          add-node-modules-path
          prettier-js

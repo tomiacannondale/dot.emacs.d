@@ -7,6 +7,7 @@
 (require 'web-mode)
 
 (add-to-list 'auto-mode-alist '("\\.html.erb$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.vue$" . web-mode))
 
 (defun my-web-mode-hook ()
   "Hook for Web mode."

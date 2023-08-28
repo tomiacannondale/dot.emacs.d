@@ -67,7 +67,6 @@
 	 js2-mode
 	 emmet-mode
 	 smartrep
-	 ace-isearch
          ox-qmd
          pt
          bundler
@@ -92,6 +91,7 @@
          editorconfig
          web-mode
          string-inflection
+         avy
 	 )
        (mapcar 'el-get-source-name el-get-sources)))
 

@@ -12,7 +12,7 @@
 (setq skk-isearch-start-mode 'latin)
 
 (setq skk-user-directory (expand-file-name "~/.emacs.d/conf/ddskk"))
-
+(setq skk-tut-file (expand-file-name "~/.emacs.d/el-get/ddskk/etc/SKK.tut"))
 
 (defun my-disable-skk ()
   "skkをoffにする。"

@@ -1,19 +1,22 @@
 ;===================================================================
 ; el-get設定
 ;===================================================================
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (let (el-get-master-branch)
-      (goto-char (point-max))
-      (eval-print-last-sexp))))
+(add-to-list 'load-path (expand-file-name "el-get/el-get" user-emacs-directory))
 
-;; el-getでのgithubのurlタイプを変更する
-(setq el-get-github-default-url-type "https")
+(unless (require 'el-get nil 'noerror)
+  (require 'package)
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.org/packages/"))
+  (package-refresh-contents)
+  (package-initialize)
+  (package-install 'el-get)
+  (require 'el-get))
 
 ;; elpaのレシピが存在しない場合ダウンロードする
 (el-get-elpa-build-local-recipes)
+
+;; el-getでのgithubのurlタイプを変更する
+(setq el-get-github-default-url-type "https")
 
 ; 自分用のレシピパスを追加する
 (setq el-get-recipe-path (cons "~/.emacs.d/el-get-my-recipes" el-get-recipe-path))

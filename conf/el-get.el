@@ -54,7 +54,6 @@
 	 edit-server
 	 id-manager
 	 yaml-mode
-	 dropdown-list
 	 japanese-holidays
 	 anzu
 	 puppet-mode

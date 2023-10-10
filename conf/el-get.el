@@ -83,7 +83,6 @@
          prettier-js
          ddskk
          rainbow-mode
-         docker-tramp
          python-mode
          highlight-indentation-guides
          typescript-mode
